@@ -1,0 +1,130 @@
+.main{
+    display: block;
+}
+.tiles{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* width: 100%; */
+    /* height: 430px; */
+    gap: 30px;
+    justify-content:space-evenly;
+    align-items: space-evenly;
+    border-top: 1px solid #BFBFBF;
+    border-bottom: 1px solid #BFBFBF;
+    box-sizing:border-box;
+    padding: 20px 15px;
+    transform-style: preserve-3d;
+}
+
+.tiles_item{
+    background: #E6E6E6;
+    border-radius: 8px;  
+    transition-timing-function: ease-in-out;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 180px;
+    width: 270px;
+   
+}
+
+.tiles_item:hover{
+    transform: rotatey(360deg);
+    filter:invert(100%);
+    transition-timing-function: ease-in-out;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 0.3s;
+}
+
+.facebook{
+    background-image:url(../images/facebook-logo.svg);
+}
+.insta{
+    background-image:url(../images/instagram-logo-black.svg);
+}
+
+.shopify{
+    background-image:url(../images/shopify-logo-black.svg);
+}
+
+.skype{
+    background-image:url(../images/skype-logo-black.svg);
+}
+
+.pinterest{
+    background-image:url(../images/pinterest-logo-black.svg)
+}
+
+.wix{
+    background-image:url(../images/wix.com-logo-black.svg);
+}
+
+.salesforce{
+    background-image:url(../images/saleforse-logo-black.svg);
+}
+
+.soundcloud{
+    background-image:url(../images/soundcloud-logo-black.svg);
+
+}
+
+.ver2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content:space-evenly;
+    align-items: space-evenly;
+    border-top: 1px solid #BFBFBF;
+    border-bottom: 1px solid #BFBFBF;
+    box-sizing:border-box;
+    padding: 20px 15px;
+    background-color: transparent;
+}
+.ver2{
+    margin-top: 70px;
+}
+.who_h2{
+    margin-top: 70px;
+}
+.ver2_item{
+    background: #E6E6E6;
+    border-radius: 8px;  
+    transition-timing-function: ease-in-out;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 180px;
+    width: 270px;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  
+}
+.ver2_item:hover{
+    transform: rotatex(180deg); 
+}
+
+.card_front, .card_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+.card_front{
+    background: #E6E6E6;
+}
+.card_back{
+    background: #1A1A1A;
+    transform: rotatex(180deg);
+}
+
+.ver2_item .ver2_img{
+    display: block;
+    margin: 0 auto;
+    align-self:center ;
+}
+ 

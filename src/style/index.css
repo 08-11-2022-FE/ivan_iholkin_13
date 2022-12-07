@@ -66,7 +66,13 @@ body{
     position: relative;
 }
 .header{
-   margin: 0 auto; 
+   margin: 0 auto;
+   height: 80px; 
+    position: fixed;
+    left: 130px;
+    top:0;
+    background-color: white;
+    z-index: 1;
 }
 .bg{
     position: relative;
@@ -94,13 +100,9 @@ body{
     display: flex;
     width: 1200px;
     margin: 0 auto;
-    height: 80px;
+    height: 54px;
     margin-bottom: 70px;
-    position: fixed;
-    left: 130px;
-    top:0;
-    background-color: white;
-    z-index: 1;
+   
 }
 
 .header_lang{
@@ -241,4 +243,8 @@ p{
 }
 article{
     margin-bottom: 70px;
+}
+select{
+    border: none;
+    appearance:none;
 }

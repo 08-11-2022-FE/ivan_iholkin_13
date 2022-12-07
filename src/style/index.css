@@ -47,6 +47,9 @@
     font-style: bold;
     
 }
+html{
+    max-width: 1440px;
+}
 
 body{
     font-family: 'PT Sans', sans-serif;
@@ -57,13 +60,33 @@ body{
     font-weight: 400;
     font-size: 28px;
     line-height: 48px;
+    position: relative;
 }
 .header{
+   margin: 0 auto; 
+}
+body::after{
+    content:"";
+    width: 760px;
+    height: 760px;
+    background-image: url(../images/bg-picture.svg);
+    background-repeat: no-repeat;
+    /* background-attachment:fixed ; */
+    z-index: -1;
+    position: absolute;
+    top:150px;
+    right: -130px;
+}
+.header_container{
     display: flex;
     width: 1200px;
     margin: 0 auto;
     height: 80px;
     margin-bottom: 70px;
+    position: fixed;
+    left: 130px;
+    top:0;
+    background-color: white;
 }
 
 .header_lang{
@@ -75,10 +98,16 @@ body{
     line-height: 80px;
 }
 
+.aside{
+    position: sticky;
+    top: 80px;
+    height : 462px;
+}
+
 .header_logo{
     margin-left: auto;
 }
-a{
+.header_nav a{
     font-family: 'Staatliches', cursive;
     text-decoration: none;
     color: #000000;
@@ -91,16 +120,47 @@ a{
 a:first-of-type{
     margin-left: 50px;
 }
-a:last-of-type::before{
+.header_nav a:last-of-type::before{
     content: "/";
     margin:0 10px
 }
 
+.aside_nav li a{
+    margin-left: 0;
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.aside_nav li{
+    width: 365px;
+    height: 58px;
+    border-bottom: 1px solid #BDBDBD; 
+    margin-bottom: 70px;
+    box-sizing: border-box;
+    
+}
 
 .main{
     width: 1200px;
     margin :0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+    position: relative;
 }
+.main_section{
+    width: 785px;
+}
+
 code{
     background: #C9C9C9
 }
@@ -127,6 +187,7 @@ h1 ,h2 {
     color: #000000;
     margin:0px 0 40px 0;
 }
+
 
 strong{
     font-family: 'PT Sans', sans-serif;

@@ -49,6 +49,7 @@
 }
 * {
     transition: all 0.3s ease 0s; 
+    scroll-behavior: smooth;
 }
 html{
     max-width: 1440px;

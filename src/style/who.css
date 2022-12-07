@@ -15,9 +15,7 @@
     box-sizing:border-box;
     padding: 20px 15px;
 }
-.who_h1{
-    /* display: block; */
-}
+
 .tiles_item{
     background: #E6E6E6;
     border-radius: 8px;  
@@ -67,5 +65,64 @@
 
 .soundcloud{
     background-image:url(../images/soundcloud-logo-black.svg);
+
+}
+
+.ver2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content:space-evenly;
+    align-items: space-evenly;
+    border-top: 1px solid #BFBFBF;
+    border-bottom: 1px solid #BFBFBF;
+    box-sizing:border-box;
+    padding: 20px 15px;
+    background-color: transparent;
+}
+.ver2{
+    margin-top: 70px;
+}
+.who_h2{
+    margin-top: 70px;
+}
+.ver2_item{
+    background: #E6E6E6;
+    border-radius: 8px;  
+    transition-timing-function: ease-in-out;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 180px;
+    width: 270px;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  
+}
+.ver2_item:hover{
+    transform: rotatex(180deg); 
+}
+
+.card_front, .card_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+.card_front{
+    background: #E6E6E6;
+}
+.card_back{
+    background: #1A1A1A;
+    transform: rotatex(180deg);
+}
+img{
+    display: block;
+    margin: 0 auto;
+    align-self:center ;
 
 }

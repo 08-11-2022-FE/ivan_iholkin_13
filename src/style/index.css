@@ -87,6 +87,7 @@ body::after{
     left: 130px;
     top:0;
     background-color: white;
+    z-index: 1;
 }
 
 .header_lang{

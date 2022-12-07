@@ -14,6 +14,7 @@
     border-bottom: 1px solid #BFBFBF;
     box-sizing:border-box;
     padding: 20px 15px;
+    transform-style: preserve-3d;
 }
 
 .tiles_item{

@@ -120,8 +120,8 @@ body{
     height : 462px;
 }
 
-.header_logo{
-    margin-left: auto;
+ .header_container .header_logo{
+  margin-left: auto;
 }
 .header_nav a{
     font-family: 'Staatliches', cursive;

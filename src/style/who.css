@@ -120,9 +120,10 @@
     background: #1A1A1A;
     transform: rotatex(180deg);
 }
-img{
+
+.ver2_item .ver2_img{
     display: block;
     margin: 0 auto;
     align-self:center ;
-
 }
+ 

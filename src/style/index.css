@@ -1,0 +1,169 @@
+@font-face{
+    font-family: 'PT Sans', sans-serif;
+    src: url(../fonts/PTSans-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'PT Sans', sans-serif;
+    src: url(../fonts/PTSans-Bold.ttf);
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face{
+    font-family: 'Farro';
+    src: url(../fonts/Farro-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'PT Sans', sans-serif;
+    src: url(../fonts/PTSans-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Staatliches';
+    src: url(../fonts/Staatliches-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Tourney';
+    src: url(../fonts/Tourney-VariableFont_wdth\,wght.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Francois One';
+    src: url(../fonts/FrancoisOne-Regular.ttf);
+    font-weight: 400;
+    font-style: bold;
+    
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    width: 1440px;
+    Height:2375px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+.header{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+    margin-bottom: 70px;
+}
+
+.header_lang{
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    line-height: 80px;
+}
+
+.header_logo{
+    margin-left: auto;
+}
+a{
+    font-family: 'Staatliches', cursive;
+    text-decoration: none;
+    color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 80px;
+    letter-spacing: 0.03em;
+}
+a:first-of-type{
+    margin-left: 50px;
+}
+a:last-of-type::before{
+    content: "/";
+    margin:0 10px
+}
+
+
+.main{
+    width: 1200px;
+    margin :0 auto;
+}
+code{
+    background: #C9C9C9
+}
+sup{
+    font-family: 'Farro', sans-serif;
+    font-weight: 300px;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    width: 100px;
+    height: 20px;
+    text-transform: capitalize;
+    vertical-align: super;
+}
+h1 ,h2 {
+    font-family: 'Francois One';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em; 
+    text-transform: uppercase;
+    color: #000000;
+    margin:0px 0 40px 0;
+}
+
+strong{
+    font-family: 'PT Sans', sans-serif;
+    src: url(../fonts/PTSans-Bold.ttf);
+    font-weight: 700;
+    font-style: bold;
+  
+}
+
+strong::before{
+    content:"+ "
+}
+
+strong::after{
+    content: ".";
+}
+em{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;  
+}
+
+span{
+    font-family: 'Farro', sans-serif;
+    font-weight: 300px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    width: 100px;
+    height: 20px;
+    text-transform: capitalize;
+    vertical-align: text-top;
+}
+p{
+    margin-bottom: 40px;
+}
+article{
+    margin-bottom: 70px;
+}
